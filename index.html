@@ -41,13 +41,19 @@
             </div>
         </div>
     </div>
-    <div class="row" id="advantages">
-        <div class="col-md-6 advantage-card">
-            <div class="card">
-                <div class="card-header bg-dark text-light text-center">
-                    <i class="fas fa-user-friends"></i>
-                    <span data-lang-en="User-Friendly Interface" data-lang-te="ఉపయోగించడానికి సులభమైన ఇంటర్‌ఫేస్" data-lang-hi="उपयोगकर्ता-अनुकूल इंटरफेस"></span>
-                </div>
+
+    <div id="accordion">
+        <!-- User-Friendly Interface -->
+        <div class="card advantage-card">
+            <div class="card-header bg-dark text-light" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-light" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fas fa-user-friends"></i> <span data-lang-en="User-Friendly Interface" data-lang-te="ఉపయోగించడానికి సులభమైన ఇంటర్‌ఫేస్" data-lang-hi="उपयोगकर्ता-अनुकूल इंटरफेस"></span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
                     <p class="card-text" data-lang-en="Our mobile application offers a user-friendly interface that ensures easy navigation and a pleasant user experience."
                         data-lang-te="మా మొబైల్ అనువర్తనం సులభంగా నావిగేషన్ మరియు సంతోషకరమైన వినియోగదారుని అనుభవాన్ని నిర్ధారించే ఉపయోగించడానికి సులభమైన ఇంటర్‌ఫేస్‌ను అందిస్తుంది."
@@ -55,12 +61,18 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 advantage-card">
-            <div class="card">
-                <div class="card-header bg-dark text-light text-center">
-                    <i class="fas fa-book"></i>
-                    <span data-lang-en="Record Maintenance" data-lang-te="రికార్డ్ నిర్వహణ" data-lang-hi="रिकॉर्ड रखरखाव"></span>
-                </div>
+
+        <!-- Record Maintenance -->
+        <div class="card advantage-card">
+            <div class="card-header bg-dark text-light" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-light" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="fas fa-book"></i> <span data-lang-en="Record Maintenance" data-lang-te="రికార్డ్ నిర్వహణ" data-lang-hi="रिकॉर्ड रखरखाव"></span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="card-body">
                     <p class="card-text" data-lang-en="Maintain records efficiently with our app's advanced record-keeping features, ensuring your data is always organized."
                         data-lang-te="మీ డేటా ఎల్లప్పుడూ వ్యవస్థీకృతంగా ఉండేలా మా యాప్ యొక్క అధునాతన రికార్డ్-కీపింగ్ ఫీచర్లతో రికార్డులను సమర్థవంతంగా నిర్వహించండి."
@@ -68,12 +80,18 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 advantage-card">
-            <div class="card">
-                <div class="card-header bg-dark text-light text-center">
-                    <i class="fas fa-shield-alt"></i>
-                    <span data-lang-en="Security" data-lang-te="భద్రత" data-lang-hi="सुरक्षा"></span>
-                </div>
+
+        <!-- Security -->
+        <div class="card advantage-card">
+            <div class="card-header bg-dark text-light" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-light" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="fas fa-shield-alt"></i> <span data-lang-en="Security" data-lang-te="భద్రత" data-lang-hi="सुरक्षा"></span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                 <div class="card-body">
                     <p class="card-text" data-lang-en="Our app prioritizes security, providing robust measures to protect your data and ensure privacy."
                         data-lang-te="మా యాప్ భద్రతకు ప్రాధాన్యత ఇస్తుంది, మీ డేటాను రక్షించడానికి మరియు గోప్యతను నిర్ధారించడానికి బలమైన చర్యలను అందిస్తుంది."
@@ -81,25 +99,18 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="col-md-6 advantage-card">
-            <div class="card">
-                <div class="card-header bg-dark text-light text-center">
-                    <i class="fas fa-tachometer-alt"></i>
-                    <span data-lang-en="Speed" data-lang-te="వేగం" data-lang-hi="गति"></span>
-                </div>
-                <div class="card-body">
-                    <p class="card-text" data-lang-en="Experience fast performance with our mobile application, designed to operate efficiently and quickly."
-                        data-lang-te="సమర్థవంతంగా మరియు వేగంగా పనిచేయడానికి రూపొందించిన మా మొబైల్ అనువర్తనంతో వేగవంతమైన పనితీరును అనుభవించండి."
-                        data-lang-hi="हमारे मोबाइल एप्लिकेशन के साथ तेज़ प्रदर्शन का अनुभव करें, जो कुशलता और तेजी से संचालित होने के लिए डिज़ाइन किया गया है।"></p>
-                </div>
+
+        <!-- Ease of Use -->
+        <div class="card advantage-card">
+            <div class="card-header bg-dark text-light" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-light" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <i class="fas fa-thumbs-up"></i> <span data-lang-en="Ease of Use" data-lang-te="ఉపయోగించడానికి సులభం" data-lang-hi="उपयोग में आसानी"></span>
+                    </button>
+                </h5>
             </div>
-        </div> -->
-        <div class="col-md-6 advantage-card">
-            <div class="card">
-                <div class="card-header bg-dark text-light text-center">
-                    <i class="fas fa-thumbs-up"></i>
-                    <span data-lang-en="Ease of Use" data-lang-te="ఉపయోగించడానికి సులభం" data-lang-hi="उपयोग में आसानी"></span>
-                </div>
+
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                 <div class="card-body">
                     <p class="card-text" data-lang-en="Our app is easy to use, making it accessible for everyone, regardless of technical expertise."
                         data-lang-te="మా యాప్ ఉపయోగించడానికి సులభం, సాంకేతిక నైపుణ్యం లేకుండా అందరికీ అందుబాటులో ఉంటుంది."
@@ -107,12 +118,18 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-6 advantage-card">
-            <div class="card">
-                <div class="card-header bg-dark text-light text-center">
-                    <i class="fas fa-user-check"></i>
-                    <span data-lang-en="User Verification" data-lang-te="వినియోగదారు ధృవీకరణ" data-lang-hi="उपयोगकर्ता सत्यापन"></span>
-                </div>
+
+        <!-- User Verification -->
+        <div class="card advantage-card">
+            <div class="card-header bg-dark text-light" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-light" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <i class="fas fa-user-check"></i> <span data-lang-en="User Verification" data-lang-te="వినియోగదారు ధృవీకరణ" data-lang-hi="उपयोगकर्ता सत्यापन"></span>
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                 <div class="card-body">
                     <p class="card-text" data-lang-en="Ensure the authenticity of users with our robust user verification processes, enhancing trust and security."
                         data-lang-te="మా బలమైన వినియోగదారు ధృవీకరణ ప్రక్రియలతో వినియోగదారుల ప్రామాణికతను నిర్ధారించండి, నమ్మకం మరియు భద్రతను పెంచుతుంది."
@@ -121,6 +138,7 @@
             </div>
         </div>
     </div>
+
     <div>
         <p class="text-center"><a href="https://petrodhar.com/Dealer/download.html">Click here</a> to download and start using our application.</p>
     </div>
@@ -138,7 +156,6 @@
             el.textContent = el.getAttribute('data-lang-' + lang);
         });
     }
-    // Set default
     // Set default language to English
     setLanguage('en');
 </script>
